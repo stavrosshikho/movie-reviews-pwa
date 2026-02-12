@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Edit review</h2>
+
+<div class="form">
+  <form method="POST">
+    <div class="field">
+      <label>Title</label>
+      <input name="title" value="{{ review['title'] }}" required>
+    </div>
+
+    <div class="field">
+      <label>Rating</label>
+      <div class="star-input">
+        {% for i in range(5, 0, -1) %}
+          <input
+            type="radio"
+            id="star{{ i }}"
+            name="rating"
+            value="{{ i }}"
+            {% if review["rating"] == i %}checked{% endif %}
+          >
+          <label for="star{{ i }}">★</label>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Review</label>
+      <textarea name="content" required>{{ review["content"] }}</textarea>
+    </div>
+
+    <button class="btn primary">Save</button>
+  </form>
+</div>
+
+{% endblock %}
