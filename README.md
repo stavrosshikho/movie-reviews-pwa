@@ -39,7 +39,7 @@ The website includes Progressive Web App functionality. Core pages and assets ar
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/stavros-movie-review-pwa.git
+git clone https://github.com/stavrosshikho/movie-reviews-pwa
 ```
 
 3. Navigate to the project folder:
