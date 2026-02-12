@@ -47,11 +47,18 @@ git clone https://github.com/your-username/stavros-movie-review-pwa.git
    cd stavros-movie-review-pwa
 ```
 5. Create and activate a virtual environment:
-```
 
-   python -m venv .venv  
-   source .venv/bin/activate   (macOS / Linux)  
-   .venv\Scripts\activate      (Windows)
+Mac/Linux
+```
+python3 -m venv .venv
+source .venv/bin/activate
+
+```
+Windows
+```
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+     
 ```
 4. Install dependencies:
 ```
